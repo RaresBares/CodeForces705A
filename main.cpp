@@ -11,10 +11,10 @@ int main() {
     for (int i = 0; i < a; i++) {
         if(state){
             state = true;
-            st += "I hate it";
+            st += "I love it ";
         } else{
             state = false;
-            st += "I love it";
+            st += "I hate it ";
         }
     }
     cout << st;
