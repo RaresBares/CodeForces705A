@@ -20,15 +20,20 @@ int main() {
     bool state = false;
     for (int i = 0; i < a; i++) {
         if(state){
-            state = true;
-            st += "I love it ";
-        } else{
             state = false;
-            st += "I hate it ";
+            st += "I love ";
+        } else{
+            state = true;
+            st += "I hate ";
+        }
+        if(a-1 == i){
+            st += "it ";
+        }else{
+            st += "that ";
         }
     }
-    trim(st);
-    cout << st;
+
+    cout <<   trim(st);;
 
     return 0;
 }
